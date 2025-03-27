@@ -10,7 +10,7 @@ public class StatisticsDto {
     private double min;
     private double max; 
 
-    StatisticsDto(DoubleSummaryStatistics stats){
+    public StatisticsDto(DoubleSummaryStatistics stats){
         this.count = stats.getCount();
         this.sum = stats.getSum();
         this.avg = stats.getAverage();
